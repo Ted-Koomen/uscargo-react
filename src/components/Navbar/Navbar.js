@@ -10,7 +10,9 @@ const NavHeader = (props) => {
         </Navbar.Brand>
       </Navbar.Header>
       <Nav>
-        <NavItem>Shit</NavItem>
+        <NavItem>Nav1</NavItem>
+        <NavItem>Nav2</NavItem>
+        <NavItem>Nav3</NavItem>
       </Nav>
     </Navbar>
   )
