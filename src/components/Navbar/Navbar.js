@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Navbar.css'
 import { NavDropdown, MenuItem } from 'react-bootstrap';
 
 
@@ -13,7 +14,7 @@ class Navbar extends Component {
         <div className="container">
           <div className="navbar-header">
             <a className="logo navbar-btn pull-left" href="/" title="Home">
-              <img src="http://www.renttoown.cc/sites/renttoown.cc/themes/rtocc/logo.png" alt="Home" />
+              <h5>uscargo.us</h5>
             </a>
 
 
@@ -29,12 +30,12 @@ class Navbar extends Component {
             <nav role="navigation">
               <ul className="menu nav navbar-nav">
                 
-              <NavDropdown eventKey="4" title="Dropdown" id="nav-dropdown">
+              <NavDropdown eventKey="4" title="Services" id="nav-dropdown">
                     <MenuItem eventKey="4.1">LTL</MenuItem>
                     <MenuItem eventKey="4.2">FTL</MenuItem>
                     <MenuItem eventKey="4.3">Sea</MenuItem>
                     <MenuItem eventKey="4.4">Air</MenuItem>
-                  </NavDropdown>
+                </NavDropdown>
                
                 <li className="last expanded dropdown">
                   <a href="/login" title="" data-target="#" className="dropdown-toggle" data-toggle="dropdown">Login</a>
