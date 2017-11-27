@@ -13,7 +13,9 @@ class App extends Component {
         <Slider/>
         <div className="container">
           <Content />
+          <div className="align-items-center">
           <Contact />
+          </div>
         </div>
       </div>
     )
