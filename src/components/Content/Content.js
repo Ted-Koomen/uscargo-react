@@ -1,5 +1,5 @@
 import React from 'react'
-import './Content.css'
+import styles from './Content.css'
 const Content = (props) => {
   return (
     <div className="middle-fixed-1 container">

@@ -406,7 +406,8 @@ p {
 .home-pitch {
   height: 480px;
   padding: 100px 30px;
-  background-image: url(//renttoown.cc/sites/renttoown.cc/themes/rtocc/images/hp-home-1.jpg);
+  background-image: url(https://sapling-inc.com/wp-content/uploads/logistics.png);
+
   background-size: cover;
 }
 
@@ -635,11 +636,14 @@ a.btn.btn-default.prop-btn {
 .text-center{
   font-weight:325!important;
 }
-.navbar-default {
-  background-color: #2fa4e7!important;
-  border-color: #1995dc!important;
-}
 
+.container {
+ margin-right: auto;
+ margin-left: auto;
+ padding-left: 15px;
+ padding-right: 15px;
+
+}
 
 #myModal .modal-content {
   padding: 30px;

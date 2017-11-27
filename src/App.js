@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './css/small-business.css';
 import './App.css';
 import Navbar from './components/Navbar/Navbar'
 import Content from './components/Content/Content'
 import Contact from './components/Contact/Contact'
+import Slider from './components/Slider/Slider'
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <Navbar/>
-        <Content />
-        <Contact />
+        <Slider/>
+        <div className="container">
+          <Content />
+          <div className="align-items-center">
+          <Contact />
+          </div>
+        </div>
       </div>
     )
   }
