@@ -635,11 +635,14 @@ a.btn.btn-default.prop-btn {
 .text-center{
   font-weight:325!important;
 }
-.navbar-default {
-  background-color: #2fa4e7!important;
-  border-color: #1995dc!important;
-}
 
+.container {
+ margin-right: auto;
+ margin-left: auto;
+ padding-left: 15px;
+ padding-right: 15px;
+
+}
 
 #myModal .modal-content {
   padding: 30px;
