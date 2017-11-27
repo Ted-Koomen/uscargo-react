@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Navbar.css'
 import { NavDropdown, MenuItem } from 'react-bootstrap';
+import {Link } from 'react-router-dom'
 
 
 import './Navbar.css'
@@ -14,7 +15,7 @@ class Navbar extends Component {
         <div className="container">
           <div className="navbar-header">
             <a className="logo navbar-btn pull-left" href="/" title="Home">
-              <h5>uscargo.us</h5>
+              <h5 className="logo navbar-btn pull-left"><Link to="/">uscargo.us</Link></h5>
             </a>
 
 
@@ -31,14 +32,14 @@ class Navbar extends Component {
               <ul className="menu nav navbar-nav">
                 
               <NavDropdown eventKey="4" title="Services" id="nav-dropdown">
-                    <MenuItem eventKey="4.1">LTL</MenuItem>
-                    <MenuItem eventKey="4.2">FTL</MenuItem>
-                    <MenuItem eventKey="4.3">Sea</MenuItem>
-                    <MenuItem eventKey="4.4">Air</MenuItem>
+                    <MenuItem eventKey="4.1"><Link to="/ltl">LTL</Link></MenuItem>
+                    <MenuItem eventKey="4.2"><Link to="/ftl">FTL</Link></MenuItem>
+                    <MenuItem eventKey="4.3"><Link to="/sea">Sea</Link></MenuItem>
+                    <MenuItem eventKey="4.4"><Link to="air">Air</Link></MenuItem>
                 </NavDropdown>
                
                 <li className="last expanded dropdown">
-                  <a href="/login" title="" data-target="#" className="dropdown-toggle" data-toggle="dropdown">Login</a>
+                  <Link className="dropdown-toggle" to="/login">Login</Link>
                 </li>
               </ul>
             </nav>
