@@ -7,7 +7,7 @@ const Content = (props) => {
         <div className="panel-pane pane-node">
           <div className="section about-rto">
             <div className="container">
-              <h1 className font-weight="100">Learn about US Cargo. Make a <span class="accent-text">smart</span> decision.</h1>
+              <h1 className="text-center">Learn about US Cargo. Make a <span class="accent-text">smart</span> decision.</h1>
             </div>
           </div>
         </div>

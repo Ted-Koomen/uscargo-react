@@ -632,6 +632,14 @@ a.btn.btn-default.prop-btn {
     padding-bottom: 12px;
   }
 }
+.text-center{
+  font-weight:325!important;
+}
+.navbar-default {
+  background-color: #2fa4e7!important;
+  border-color: #1995dc!important;
+}
+
 
 #myModal .modal-content {
   padding: 30px;
