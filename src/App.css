@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -22,9 +24,8 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.main-image {
+  width: 50px;
 }
 
 body {
@@ -36,3 +37,4 @@ body {
     padding-top: 56px;
   }
 }
+

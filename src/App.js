@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import './css/small-business.css';
 import './App.css';
 import NavHeader from './components/Navbar/Navbar'
 import Content from './components/Content/Content'

@@ -5,7 +5,6 @@ class NavHeader extends Component {
 
   handleClick = (e) => {
     var id = e.target.id
-    console.log(id)
     if(id === "login") {
       console.log("login")
     } else if (id === "other-content") {
