@@ -11,7 +11,7 @@ const Contact = (props) => {
             Contact
           </h3>
           <p>
-            To book a shipment please log into CargoSaas. For quotes or customer service concerns please contact us by phone at 718-613-6165 or sales@uscargo.us
+            To book a shipment please use <a href="https://www.cargosaas.com" target="_blank"> CargoSaas</a>. For quotes or customer service concerns please contact us by phone at 718-613-6165 or sales@uscargo.us
           </p>
         </div>
         <div className="col-sm-4">
