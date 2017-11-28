@@ -406,7 +406,7 @@ p {
 .home-pitch {
   height: 600px;
   padding: 100px 30px;
-  background-image: url(https://sapling-inc.com/wp-content/uploads/logistics.png);
+  background-image: url(./images/logistics.png);
 
   background-size: cover;
 }

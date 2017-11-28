@@ -2,7 +2,7 @@
 .container-ship {
     height: 600px;
     padding: 100px 30px;
-    background-image: url(http://www.apl.com/aplgallery/photos/HighRes/Vessels/APL_ship_air_37%20LR_200916.jpg);
+    background-image: url(../../images/cargo-ship.jpg);
 
 
     background-size: cover;

@@ -8,7 +8,7 @@ class Slider extends Component {
             <div className="top">
                 <div className="panel-pane pane-custom pane-1">
                     <div className="home-pitch">
-                       
+    
                     </div>
 
                 </div>
