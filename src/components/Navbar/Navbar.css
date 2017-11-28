@@ -25,12 +25,20 @@
     margin-bottom: 6px;
 }
 
+.navbar-item{}
+
+
 .navbar-nav {
     margin: 7.5px -15px;
 }
 
 .dropdown-toggle {
     color: #fff;
+}
+
+.dropdown-toggle:hover {
+    background-color:#4d9ad6!important;
+    
 }
 
 

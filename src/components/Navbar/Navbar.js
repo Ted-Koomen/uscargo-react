@@ -31,7 +31,7 @@ class Navbar extends Component {
             <nav role="navigation">
               <ul className="menu nav navbar-nav">
                 
-              <NavDropdown eventKey="4" title="Services" id="nav-dropdown">
+              <NavDropdown className="navbar-item" eventKey="4" title="Services" id="nav-dropdown">
                     <MenuItem eventKey="4.1"><Link to="/ltl">LTL</Link></MenuItem>
                     <MenuItem eventKey="4.2"><Link to="/ftl">FTL</Link></MenuItem>
                     <MenuItem eventKey="4.3"><Link to="/sea">Sea</Link></MenuItem>
@@ -39,7 +39,7 @@ class Navbar extends Component {
                 </NavDropdown>
                
                 <li className="last expanded dropdown">
-                  <Link className="dropdown-toggle" to="/login">Login</Link>
+                  <Link className="dropdown-toggle navbar-item" to="/login">Login</Link>
                 </li>
               </ul>
             </nav>
