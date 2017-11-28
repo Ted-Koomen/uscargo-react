@@ -54,7 +54,6 @@ class RegisterForm extends Component {
         const passwordLength = this.state.password.length
         const emailLength = this.state.email.length
         const isNotDisabled = userNameLength > 0 && passwordLength > 0 && emailLength > 0
-        console.log(isNotDisabled)
 
         if (this.state.redirect){
             return <Redirect to="/"/>
