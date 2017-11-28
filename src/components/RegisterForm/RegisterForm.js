@@ -12,6 +12,7 @@ class RegisterForm extends Component {
             email: '',
             redirect: false
         }
+       
     }
 
     handleSubmit = (e) => {
@@ -45,7 +46,16 @@ class RegisterForm extends Component {
         }
     }
 
+
+    
+    
     render() {
+        const userNameLength = this.state.userName.length
+        const passwordLength = this.state.password.length
+        const emailLength = this.state.email.length
+        const isNotDisabled = userNameLength > 0 && passwordLength > 0 && emailLength > 0
+        console.log(isNotDisabled)
+
         if (this.state.redirect){
             return <Redirect to="/"/>
         }
@@ -56,7 +66,7 @@ class RegisterForm extends Component {
                 <input id="name" onChange={this.handleChange} type="text" placeholder="name"/>
                 <input id="password" onChange={this.handleChange} type="password" placeholder="password"/>
                 <input id="email" onChange={this.handleChange} type="text" placeholder="email address"/>
-                <button>create</button>
+                <button disabled={!isNotDisabled ? true : false} className={!isNotDisabled ? "disabled" : ""}>create</button>
                 <p className="message">Already registered? <Link to="/login">Sign In</Link></p>
                 </form>
             </div>
