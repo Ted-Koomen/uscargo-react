@@ -6,11 +6,12 @@ import Contact from './components/Contact/Contact'
 import Slider from './components/Slider/Slider'
 import HomePage from './HomePage'
 import Navbar from './components/Navbar/Navbar'
-import LTL from './LTL'
-import FTL from './FTL'
-import Sea from './Sea'
-import Air from './Air'
-import Login from './Login'
+import LTL from './pages/LTL'
+import FTL from './pages/FTL'
+import Sea from './pages/Sea'
+import Air from './pages/Air'
+import Login from './pages/Login'
+import Register from './pages/Register'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
           <Route path="/sea" component={Sea}/>
           <Route path="/air" component={Air}/>
           <Route path="/login" component={Login}/>
+          <Route path="/register" component={Register}/>
         </div>
       </Router>
     )
