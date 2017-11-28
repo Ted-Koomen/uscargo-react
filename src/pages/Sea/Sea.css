@@ -1,0 +1,9 @@
+
+.container-ship {
+    height: 600px;
+    padding: 100px 30px;
+    background-image: url(../../images/cargo-ship.jpg);
+
+
+    background-size: cover;
+}
