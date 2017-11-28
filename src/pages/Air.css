@@ -5,3 +5,11 @@
 
     background-size: cover;
 }
+
+h1 {
+    font-weight: 300!important
+}
+
+.accent-text {
+    font-style: italic;
+}
