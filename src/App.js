@@ -12,6 +12,7 @@ import Sea from './pages/Sea'
 import Air from './pages/Air'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Footer from './components/Footer/Footer'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
           <Route path="/air" component={Air}/>
           <Route path="/login" component={Login}/>
           <Route path="/register" component={Register}/>
+          <Footer />
         </div>
       </Router>
     )
