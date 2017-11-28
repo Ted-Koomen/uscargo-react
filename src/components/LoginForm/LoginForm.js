@@ -7,11 +7,15 @@ class LoginForm extends Component {
     constructor(props) {
         super(props)
     }
+
+    handleSubmit = () => {
+        
+    }
     render() {
         return (
             <div className="login-page">
                 <div className="form">
-                <form className="login-form">
+                <form className="login-form" onSubmit={this.handleSubmit}>
                     <input type="text" placeholder="username"/>
                     <input type="password" placeholder="password"/>
                     <button>login</button>
