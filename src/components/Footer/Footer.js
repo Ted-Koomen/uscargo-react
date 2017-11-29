@@ -1,13 +1,14 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Footer = (props) => {
     return (
         <footer className="footer">
             <div className="container">
                 <ul className="menu nav">
-                    <li className="first leaf"><a href="#">About Us</a></li>
-                    <li className="leaf"><a href="#">Privacy Policy</a></li>
-                    <li className="last leaf"><a href="#">Contact Us</a></li>
+                    <li className="first leaf"><Link to="/">About Us</Link></li>
+                    <li className="leaf"><a href="#">User Agreement</a></li>
+                    <li className="last leaf"><Link to="/contact">Contact Us</Link></li>
                 </ul>
                 <p className="text-center"> Copyright © 2017 UsCargo</p>
             </div>
