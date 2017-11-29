@@ -16,13 +16,15 @@ import ContactPage from './pages/ContactPage/ContactPage'
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import Footer from './components/Footer/Footer'
+import ScrollToTop from './ScrollToTop'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router onUpdate={() => window.scrollTo(0, 0)}>
         <div>
+          <ScrollToTop>
           <Navbar/>
           <Switch>
             <Route exact path="/" component={HomePage}/>
@@ -36,6 +38,7 @@ class App extends Component {
             <Route component={NotFound} />
           </Switch>
           <Footer/>
+          </ScrollToTop>
         </div>
       </Router>
     )
