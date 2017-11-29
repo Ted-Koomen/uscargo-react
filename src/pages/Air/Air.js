@@ -3,18 +3,37 @@ import './Air.css'
 
 const Air = (props) => {
     return (
-        <div className="row">
-            <section className="col-sm-12">
-            <h1 className="page-header">Do I need <span className="accent-text">Air Transport?</span></h1>
-                <article className="node node-articl node-promotedc clear-fix">
-                    <header>
-                        <span property="dc:title" content="Do I need good credit to quailify for Rent to Own? " className="rdf-meta element-hidden"/>
-                    </header>
-                    <p> While good credit will help you secure the rent to own option, you don't need to have a perfect credit. If you did, you most likely wouldn't be considering rent to own. What is important is that you have a path to improve your credit score. For example, if you had a chapter 13 bankruptcy 5 years ago, you can expect to see it be removed in 2 years. Rather than waiting 2 more years to start your home ownership, you can consider rent to own today with plans to transition to traditional mortgage financing in 2-3 years.   </p>
-                    <h3>Time to start improving your credit</h3>
-                    <p> If you sign on to a 5-year rent to own agreement, your 5-year clock starts ticking. In this 5 year period, you'd need to (i) get your credit to the level that will qualify for traditional mortgage, and (ii) save enough money for a down-payment. You don't want to miss this time period (5 years in this example), because if you do, the premium you will have paid compared to rental will have been wasted. So, have a solid plan in place to get your credit and down-payment ready in time. </p>
-                </article>
-            </section>
+        <div>
+            <div className="dreamliner"/>
+            <h1 className="page-header text-center">What is Air Cargo?</h1>
+            <div className="text-center align-items-center">
+               <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 hid">
+                        <div class="row">
+                            <div class="col-xs-10 col-sm-offset-1 text-center align-center">
+                                < p > The express shipping options of air freight make it a valuable option
+                                for coordinating time sensitive shipments to almost anywhere in the world.This can be particularly advantageous
+                                for smaller and mid - sized companies as it allows them to participate in international trade in an expeditious and effective manner.Shipping by air also offers the advantage of a high level of security as airport controls over cargo are tightly managed.
+
+                                    <br/>
+                                        
+                                    <br/>
+                                    Used in conjunction with other forms of shipping, like marine, rail and ground, air freight became widely utilized as one of the central delivery options in importing and exporting at the beginning of the Twentieth Century.Growing exponentially as an industry during the expansion of trade networks and markets in the last 40 years, air freight is now regarded as an efficient means to ship nationally and internationally.
+                                    <br/>
+                                    <br/>
+                                    Customs brokerage firms can determine the most reliable and cost - effective means
+                                    for using air freight options to coordinate corporate, individual parcel or shipment deliveries.A customs broker can negotiate the vast array of options and determine the most applicable means to ensure expedient and on - time delivery.
+                                    
+                                    As with all international shipping, customs clearance procedures must always be anticipated and properly documented.Working with a customs broker
+                                    for your air shipping ensures that all aspects of your freight management are covered, from expedited service through customs clearance and shipment delivery.
+
+                                </p>
+                                <h3>US Cargo works closely with many customers brokers to clear your shipments as a <span className="accent-text">team</span>.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
         </div>
     )
 }
