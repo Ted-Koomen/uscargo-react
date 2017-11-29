@@ -9,7 +9,7 @@ const Content = (props) => {
           <div className="section about-rto">
             <div className="container">
               <div className="text-center">
-                <h1 className="page-header">Learn about US Cargo. Make a <span class="accent-text">smart</span> decision.</h1>
+                <h1 className="page-header">Learn about US Cargo. Make a <span className="accent-text">smart</span> decision.</h1>
               </div>
 
             </div>

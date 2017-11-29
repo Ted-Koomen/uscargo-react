@@ -405,7 +405,7 @@ p {
 
 .home-pitch {
   height: 600px;
-  padding: 100px 30px;
+  padding: 50px 30px;
   background-image: url(./images/logistics.png);
 
   background-size: cover;
@@ -423,7 +423,7 @@ p {
 
 .home-pitch h3 {
   font-size: 160%;
-  margin-bottom: 20px;
+  
 }
 
 .home-pitch input#geocomplete {
@@ -431,7 +431,7 @@ p {
 }
 
 .section.about-rto {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .about-rto .accent-text {
