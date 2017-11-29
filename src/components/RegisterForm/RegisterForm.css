@@ -8,6 +8,8 @@
   margin: auto;
 }
 .form {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
   position: relative;
   z-index: 1;
   background: #FFFFFF;
@@ -17,6 +19,17 @@
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
+	
+ @keyframes slideInFromLeft {
+	  0% {
+	    transform: translateX(-100%);
+	  }
+	  100% {
+	    transform: translateX(0);
+	  }
+	}
+
 .form input {
   font-family: "Roboto", sans-serif;
   outline: 0;
@@ -54,6 +67,7 @@
   color: #51A3E1;
   text-decoration: none;
 }
+
 
 
 
