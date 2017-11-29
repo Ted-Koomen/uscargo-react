@@ -12,6 +12,7 @@ import LTL from './pages/LTL/LTL'
 import FTL from './pages/FTL/FTL'
 import Sea from './pages/Sea/Sea'
 import Air from './pages/Air/Air'
+import ContactPage from './pages/ContactPage/ContactPage'
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 import Footer from './components/Footer/Footer'
@@ -31,6 +32,7 @@ class App extends Component {
             <Route path="/air" component={Air}/>
             <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
+            <Route path="/contact" component={ContactPage}/>
             <Route component={NotFound} />
           </Switch>
           <Footer/>
