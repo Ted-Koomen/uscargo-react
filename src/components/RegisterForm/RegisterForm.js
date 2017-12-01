@@ -79,9 +79,9 @@ class RegisterForm extends Component {
            </ul>
             <div className="form">
                 <form onSubmit={this.handleSubmit}>
+                <input id="email" onChange={this.handleChange} type="email`" value={this.state.email} placeholder="email address"/>
                 <input id="name" onChange={this.handleChange} value={this.state.userName} type="text" placeholder="name"/>
                 <input id="password" onChange={this.handleChange} value={this.state.password} type="password" placeholder="password"/>
-                <input id="email" onChange={this.handleChange} type="text" value={this.state.email} placeholder="email address"/>
                 <button disabled={!isNotDisabled ? true : false} className={!isNotDisabled ? "disabled" : ""}>create</button>
                 <p className="message">Already registered? <Link to="/login">Sign In</Link></p>
                 </form>
