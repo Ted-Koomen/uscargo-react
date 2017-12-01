@@ -13,7 +13,7 @@ class Greeting extends Component {
     }
 
     componentDidMount() {
-        axios.get(`http://localhost:3001${this.props.location.pathname}`)
+        axios.get(`https://uscargo-api.herokuapp.com${this.props.location.pathname}`)
             .then(response => {
                 this.setState({
                     name: response.data.username
