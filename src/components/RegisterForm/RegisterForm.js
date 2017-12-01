@@ -31,6 +31,10 @@ class RegisterForm extends Component {
                     email:'',
                     password: ''
                 })
+            } else {
+                this.setState({
+                    redirect: true
+                })
             }
         })
         .catch(err => {
