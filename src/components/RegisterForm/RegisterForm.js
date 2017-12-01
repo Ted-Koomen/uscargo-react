@@ -11,29 +11,37 @@ class RegisterForm extends Component {
             password: '',
             email: '',
             redirect: false,
-            errors: []
+            errors: [],
+            accessToken: ''
+            
         }
        
     }
 
     handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('https://uscargo-api.herokuapp.com/users/new', {
+        axios.post('http://localhost:3001/users', {
             userName: this.state.userName,
             password: this.state.password,
             email: this.state.email
         })
         .then(response => {
-            if(response.data) {
+        console.log(response)
+            if(!response.data.status) {
                 this.setState({
-                    errors: response.data,
                     userName: '',
                     email:'',
-                    password: ''
+                    password: '',
+                    accessToken: response.data.access_token,
+                    redirect: true,
+            
                 })
             } else {
                 this.setState({
-                    redirect: true
+                    errors: response.data.errors,
+                    userName: '',
+                    email: '',
+                    password: ''
                 })
             }
         })
@@ -70,7 +78,7 @@ class RegisterForm extends Component {
         const isNotDisabled = userNameLength > 0 && passwordLength > 0 && emailLength > 0
 
         if (this.state.redirect){
-            return <Redirect to="/"/>
+            return <Redirect to={`users/${this.state.accessToken}`}/>
         }
         return (
            <div className="login-page text-center">

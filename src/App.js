@@ -15,6 +15,7 @@ import Air from './pages/Air/Air'
 import ContactPage from './pages/ContactPage/ContactPage'
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
+import Greeting from './pages/Greeting/Greeting'
 import Footer from './components/Footer/Footer'
 import ScrollToTop from './ScrollToTop'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -35,6 +36,7 @@ class App extends Component {
             <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
             <Route path="/contact" component={ContactPage}/>
+            <Route path="/users/:access_token" component={Greeting} />
             <Route component={NotFound} />
           </Switch>
           <Footer/>
