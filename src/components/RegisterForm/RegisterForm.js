@@ -20,7 +20,7 @@ class RegisterForm extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/users', {
+        axios.post('https://uscargo-api.herokuapp.com/users', {
             userName: this.state.userName,
             password: this.state.password,
             email: this.state.email
