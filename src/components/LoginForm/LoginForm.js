@@ -18,7 +18,7 @@ class LoginForm extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        axios.post('https://uscargo-api.herokuapp.com/login', {
+        axios.post('http://localhost:3001/login', {
             email: this.state.email,
             password: this.state.password
         })
