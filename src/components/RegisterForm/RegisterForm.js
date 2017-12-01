@@ -10,7 +10,8 @@ class RegisterForm extends Component {
             userName: '',
             password: '',
             email: '',
-            redirect: false
+            redirect: false,
+            errors: []
         }
        
     }
@@ -23,8 +24,13 @@ class RegisterForm extends Component {
             email: this.state.email
         })
         .then(response => {
-            if (response.status === 200) {
-                this.setState({redirect:true})
+            if(response.data) {
+                this.setState({
+                    errors: response.data,
+                    userName: '',
+                    email:'',
+                    password: ''
+                })
             }
         })
         .catch(err => {
@@ -46,8 +52,12 @@ class RegisterForm extends Component {
         }
     }
 
-
-    
+    renderErrors = () => {
+        return(
+        this.state.errors.map(error => {
+           return( <li>{error}</li>)
+        }))
+    }
     
     render() {
         const userNameLength = this.state.userName.length
@@ -59,12 +69,15 @@ class RegisterForm extends Component {
             return <Redirect to="/"/>
         }
         return (
-           <div className="login-page">
+           <div className="login-page text-center">
+            <ul className="errors">
+                {this.renderErrors()}               
+           </ul>
             <div className="form">
                 <form onSubmit={this.handleSubmit}>
-                <input id="name" onChange={this.handleChange} type="text" placeholder="name"/>
-                <input id="password" onChange={this.handleChange} type="password" placeholder="password"/>
-                <input id="email" onChange={this.handleChange} type="text" placeholder="email address"/>
+                <input id="name" onChange={this.handleChange} value={this.state.userName} type="text" placeholder="name"/>
+                <input id="password" onChange={this.handleChange} value={this.state.password} type="password" placeholder="password"/>
+                <input id="email" onChange={this.handleChange} type="text" value={this.state.email} placeholder="email address"/>
                 <button disabled={!isNotDisabled ? true : false} className={!isNotDisabled ? "disabled" : ""}>create</button>
                 <p className="message">Already registered? <Link to="/login">Sign In</Link></p>
                 </form>
