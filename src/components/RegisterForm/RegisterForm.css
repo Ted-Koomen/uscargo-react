@@ -20,7 +20,12 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-	
+.errors {
+  list-style-type: none;
+  color:#cc0000;
+
+}
+
  @keyframes slideInFromLeft {
 	  0% {
 	    transform: translateX(-100%);
