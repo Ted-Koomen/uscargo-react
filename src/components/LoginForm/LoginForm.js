@@ -8,18 +8,22 @@ class LoginForm extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            userName:'',
-            password:''
+            email:'',
+            password:'',
+            accessToken:''
         }
     }
 
-    handleSubmit = () => {
+    handleSubmit = (event) => {
+        event.preventDefault()
         axios.post('http://localhost:3001/login', {
-            userName: this.state.userName,
+            email: this.state.email,
             password: this.state.password
         })
         .then(response => {
-            console.log(response)
+            this.setState({
+                accessToken: response.data
+            })
         })
         .catch(err => {
             console.log(err)
@@ -29,8 +33,8 @@ class LoginForm extends Component {
     handleChange = (event) => {
         event.preventDefault()
         switch (event.target.id) {
-            case "username":
-                this.setState({userName: event.target.value})
+            case "email":
+                this.setState({email: event.target.value})
             break
             case "password":
                 this.setState({password: event.target.value})
@@ -38,16 +42,26 @@ class LoginForm extends Component {
         }
     }
 
+    loginCheck = () => {
+        if(this.state.accessToken) {
+            return (
+                <p>
+                    Logged In
+                </p>
+            )
+        }
+    }
+
     render() {
-        const userNameLength = this.state.userName.length
+        const emailLength = this.state.email.length
         const passwordLength = this.state.password.length
-        const isNotDisabled = userNameLength > 0 && passwordLength > 0
+        const isNotDisabled = emailLength > 0 && passwordLength > 0
         
         return (
             <div className="login-page">
                 <div className="form">
                 <form className="login-form" onSubmit={this.handleSubmit}>
-                    <input onChange={this.handleChange} id="username" type="text" placeholder="username"/>
+                    <input onChange={this.handleChange} id="email" type="text" placeholder="email"/>
                     <input onChange={this.handleChange} id="password" type="password" placeholder="password"/>
                         <button disabled={!isNotDisabled ? true : false} className = {!isNotDisabled ? "disabled" : ""}>login</button>
                     <p className="message">Not registered? <Link to="/register">Create an account</Link></p>
