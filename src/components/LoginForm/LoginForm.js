@@ -10,7 +10,8 @@ class LoginForm extends Component {
         this.state = {
             email:'',
             password:'',
-            accessToken:''
+            accessToken:'',
+            loginErrors: ''
         }
     }
 
@@ -21,12 +22,17 @@ class LoginForm extends Component {
             password: this.state.password
         })
         .then(response => {
-            this.setState({
-                accessToken: response.data
-            })
+            if(response.status === 200){
+                this.setState({
+                    accessToken: response.data
+                })
+            } else {
+                console.log("Error")
+            }
+           
         })
         .catch(err => {
-            console.log(err)
+            this.setState({loginErrors: "Invalid email or password combination"})
         })
     }
 
@@ -43,10 +49,10 @@ class LoginForm extends Component {
     }
 
     loginCheck = () => {
-        if(this.state.accessToken) {
+        if(this.state.loginErrors) {
             return (
-                <p>
-                    Logged In
+                <p className="errors">
+                    {this.state.loginErrors}
                 </p>
             )
         }
@@ -58,7 +64,8 @@ class LoginForm extends Component {
         const isNotDisabled = emailLength > 0 && passwordLength > 0
         
         return (
-            <div className="login-page">
+            <div className="login-page text-center">
+            {this.loginCheck()}
                 <div className="form">
                 <form className="login-form" onSubmit={this.handleSubmit}>
                     <input onChange={this.handleChange} id="email" type="text" placeholder="email"/>
