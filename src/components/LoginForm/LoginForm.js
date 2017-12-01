@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './LoginForm.css'
 import {Link} from 'react-router-dom'
 import './LoginForm.css'
+import Input from 'react-validation/build/input';
 import axios from 'axios'
 class LoginForm extends Component {
 
@@ -17,7 +18,7 @@ class LoginForm extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        axios.post('http://localhost:3001/login', {
+        axios.post('https://uscargo-api.herokuapp.com/login', {
             email: this.state.email,
             password: this.state.password
         })
@@ -68,7 +69,7 @@ class LoginForm extends Component {
             {this.loginCheck()}
                 <div className="form">
                 <form className="login-form" onSubmit={this.handleSubmit}>
-                    <input onChange={this.handleChange} id="email" type="text" placeholder="email"/>
+                    <input onChange={this.handleChange} id="email" type="email" placeholder="email"/>
                     <input onChange={this.handleChange} id="password" type="password" placeholder="password"/>
                         <button disabled={!isNotDisabled ? true : false} className = {!isNotDisabled ? "disabled" : ""}>login</button>
                     <p className="message">Not registered? <Link to="/register">Create an account</Link></p>
