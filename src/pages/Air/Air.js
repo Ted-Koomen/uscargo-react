@@ -7,10 +7,10 @@ const Air = (props) => {
             <div className="dreamliner"/>
             <h1 className="page-header text-center">What is Air Cargo?</h1>
             <div className="text-center align-items-center">
-               <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1 hid">
-                        <div class="row">
-                            <div class="col-xs-10 col-sm-offset-1 text-center align-center">
+               <div className="row">
+                    <div className="col-sm-10 col-sm-offset-1 hid">
+                        <div className="row">
+                            <div className="col-xs-10 col-sm-offset-1 text-center align-center">
                                 < p > The express shipping options of air freight make it a valuable option
                                 for coordinating time sensitive shipments to almost anywhere in the world.This can be particularly advantageous
                                 for smaller and mid - sized companies as it allows them to participate in international trade in an expeditious and effective manner.Shipping by air also offers the advantage of a high level of security as airport controls over cargo are tightly managed.

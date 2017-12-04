@@ -22,6 +22,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   render() {
+    {console.log(this.props.store)}
     return (
       <Router onUpdate={() => window.scrollTo(0, 0)}>
         <div>

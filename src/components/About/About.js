@@ -6,10 +6,10 @@ const About = (props) => {
         <div>
             <h1 className="page-header text-center">Our Mission</h1>
             <div className="text-center align-items-center">
-               <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1 hid">
-                        <div class="row">
-                            <div class="col-xs-10 col-sm-offset-1 text-center align-center">
+               <div className="row">
+                    <div className="col-sm-10 col-sm-offset-1 hid">
+                        <div className="row">
+                            <div className="col-xs-10 col-sm-offset-1 text-center align-center">
                                 <p>US Cargo's staff has almost 80 years of combined experience in the industry. Our goal is to offer our expertise in moving
                                     your freight from point A to point B in the timeliest manner, while providing very aggressive pricing. US Cargo is Customs Bonded, fully insured, and has access to drop frame trailers, flat beds, and step decks.
                                     <br/>

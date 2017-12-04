@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import axios from 'axios'
 import {Redirect} from 'react-router'
 import './RegisterForm.css'
+
 class RegisterForm extends Component {
     constructor(props){
         super(props)
@@ -12,10 +13,8 @@ class RegisterForm extends Component {
             email: '',
             redirect: false,
             errors: [],
-            accessToken: ''
-            
-        }
-       
+            accessToken: ''            
+        }       
     }
 
     handleSubmit = (e) => {
