@@ -23,6 +23,7 @@ const LTL = (props) => {
                                     <li>Can I consolidate and palletize my shipment?</li>
                                     <li>Am I comfortable sharing trailer space with other freight shipments?</li>
                                     <li>Do I understand the timeline restrictions of LTL freight?</li>
+                            <h3>US Cargo works closely with many LTL carriers to deliver your shipment as a <span className="accent-text">team</span>.</h3>
                             </div>
                         </div>                            
                     </div>

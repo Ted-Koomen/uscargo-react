@@ -4,7 +4,7 @@ const FTL = (props) => {
     return (
         <div>
             <div className="ftl" />
-                <h1 className="page-header text-center">What is LTL shipping?</h1>
+                <h1 className="page-header text-center">What is FTL shipping?</h1>
                 <div className="align-items-center">
                     <div className="row">
                         <div className="col-sm-10 col-sm-offset-1 hid inline-block">
@@ -21,6 +21,7 @@ const FTL = (props) => {
                                     how fragile the freight is, and how quickly you need your shipment to reach its destination. If you have a large shipment that’s delicate in nature and needs to arrive quickly, 
                                     FTL is your best bet. 
                                     If your shipment is small, sturdy, and not in a time crunch, LTL will fit your needs.</p>
+                                <h3>US Cargo works closely with many FTL carriers to deliver your shipment as a <span className="accent-text">team</span>.</h3>
                             </div>
                         </div>                            
                     </div>
