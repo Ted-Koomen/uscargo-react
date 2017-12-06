@@ -3,7 +3,7 @@ import './LTL.css'
 const LTL = (props) => {
     return (
         <div>
-            <div className="dreamliner" />
+            <div className="ltl-truck" />
             <h1 className="page-header text-center">What is LTL shipping?</h1>
             <div className="align-items-center">
                 <div className="row">
